@@ -3,16 +3,16 @@ ESX = nil
 CreateThread(function()
 	while ESX == nil do
 		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        print("Created_By_BZH Corporation")
+        print("Created_By_FaZer")
 		Wait(100)
 	end
 end)
 
 local MenuWash = false
 
------------------------------------------- 
-------------- [ MENU SHOPS ] -------------
-------------------------------------------
+------------------------------------ 
+------------- [ MENU ] -------------
+------------------------------------
 
 local nettoyage = RageUI.CreateMenu("Nettoyage Voiture", "Service", 10 , 80)
 nettoyage.Closed = function() MenuWash = false end
